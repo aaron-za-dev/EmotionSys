@@ -1,0 +1,93 @@
+@font-face{
+    font-family: Aileron Semibold;
+    src: url('../fonts/AileronSB.otf');
+}
+
+.combo-box-base {
+    -fx-background-color: #525252;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+    -fx-pref-height: 33px;
+}
+
+.combo-box .cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #f9f9f9;
+    -fx-alignment: center;
+}
+
+.combo-box .list-view{
+    -fx-padding: 0px;
+}
+
+.combo-box .list-view .list-cell{
+    -fx-background-color: #525252;
+    -fx-text-fill: #F9F9F9;
+    -fx-alignment: center;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover{
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #f9f9f9;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover{
+    -fx-background-color: linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+    -fx-text-fill: #232323;
+}
+
+/* ************************************* */
+
+.combo-box .arrow{
+    -fx-background-color: #FFCD3C;
+}
+
+.combo-box .arrow-button{
+    -fx-background-color: #525252;
+}
+
+/*Aqui se establece el ancho del scrollbar*/
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-color: #525252;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+    -fx-pref-width: 9px;
+}
+
+/*Aqui se modifica el puntero cuando se coloca sobre el scrollbar y se vuelve translucido*/
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical > *.thumb {
+    -fx-background-color: linear-gradient(to bottom, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-cursor: hand;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical > *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar:vertical > *.increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.combo-box-popup > *.list-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+

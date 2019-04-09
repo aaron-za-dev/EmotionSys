@@ -1,0 +1,91 @@
+@font-face{
+    font-family: Aileron Semibold;
+    src: url('../fonts/AileronSB.otf');
+}
+
+.list-view{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent;
+}
+
+.list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+}
+
+.list-cell:even {
+    -fx-background-color: transparent;
+}
+
+.list-cell:odd {
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected{
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    /*-fx-text-fill: #f9f9f9;*/
+}
+
+/*.list-cell:filled:hover, list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #f9f9f9;
+}*/
+
+.list-cell:filled:hover{
+    -fx-background-color: linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+    -fx-effect: dropshadow(three-pass-box,  rgba(0.0, 0.0, 0.0, 0.6), 10, 0, 2.0, 2.0);
+    /*-fx-background-color: #212121;
+    /*-fx-text-fill: #232323;*/
+}
+
+.list-view > *.virtual-flow > *.scroll-bar:vertical {
+    -fx-background-color: #525252;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+    -fx-pref-width: 9px;
+}
+
+/*Aqui se modifica el puntero cuando se coloca sobre el scrollbar y se vuelve translucido*/
+.list-view > *.virtual-flow > *.scroll-bar:vertical > *.thumb {
+    -fx-background-color: linear-gradient(to bottom, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-cursor: hand;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.list-view > *.virtual-flow > *.scroll-bar:vertical > *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.list-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.list-view > *.virtual-flow > *.scroll-bar:vertical > *.increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.list-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+
+.list-view > *.virtual-flow > *.scroll-bar > *.decrement-button > *.decrement-arrow,
+.list-view > *.virtual-flow > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}

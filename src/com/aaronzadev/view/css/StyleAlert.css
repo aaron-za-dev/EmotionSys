@@ -1,0 +1,46 @@
+@font-face{
+    font-family: Aileron Semibold;
+    src: url('../fonts/AileronSB.otf');
+}
+
+.dialog-pane {
+    -fx-border-color: #212121;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.6), 10, 0, 2.0, 2.0);
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color: #212121;
+}
+
+.dialog-pane > .content.label {
+    -fx-background-color: #212121;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #212121;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-background-color: #212121;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-family: "Aileron Bold";
+    -fx-font-size: 15px;
+}
+
+.dialog-pane .button {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #F9F9F9;
+    -fx-pref-height: 33px;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+    -fx-text-fill: #232323;
+}
+

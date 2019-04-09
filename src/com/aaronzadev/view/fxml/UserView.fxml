@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" styleClass="BackgroundRoot" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aaronzadev.controller.UserController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="370.0" prefWidth="570.0" styleClass="BackgroundCard" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="570.0" styleClass="Downbar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="70.0" layoutY="7.0" styleClass="LabelsToolbar" text="Administrar Usuarios" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/users-medium.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <GridPane layoutX="15.0" layoutY="65.0" prefHeight="390.0" prefWidth="690.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="65.0">
+               <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="15.0" minWidth="15.0" prefWidth="15.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="15.0" valignment="TOP" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="Labels" text="Nombre de Usuario:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label styleClass="Labels" text="Contraseña:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label styleClass="Labels" text="Nombre (S):" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label styleClass="Labels" text="Apellido Paterno:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label styleClass="Labels" text="Apellido Materno:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label styleClass="Labels" text="Rol de Usuario:" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <TextField fx:id="txtNick" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtNames" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtApPat" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtApMat" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="cbRoles" prefHeight="28.0" prefWidth="150.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <PasswordField fx:id="txtPass" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <JFXButton fx:id="btnUpdate" prefWidth="110.0" text="Actualizar" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <styleClass>
+                        <String fx:value="buttons" />
+                        <String fx:value="buttonUpdate" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAdd" prefWidth="110.0" text="Agregar" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="buttons" />
+                        <String fx:value="buttonAdd" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="btnClean" prefWidth="110.0" text="Limpiar" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <styleClass>
+                        <String fx:value="buttonClean" />
+                        <String fx:value="buttons" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label prefWidth="245.0" styleClass="LabelsSubtitle" text="Usuarios del Sistema">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="240.0" GridPane.rowIndex="1" />
+                  <Separator prefWidth="430.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                  <Label prefHeight="21.0" prefWidth="290.0" styleClass="LabelsSubtitle" text="Detalles de Usuario" GridPane.columnIndex="2" GridPane.columnSpan="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXListView fx:id="lvUsers" prefHeight="339.0" prefWidth="240.0" stylesheets="@../css/ListStyle.css" GridPane.rowIndex="2" GridPane.rowSpan="6" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

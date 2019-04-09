@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="BackgroundRoot" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aaronzadev.controller.NTSupportController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="BackgroundCard" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="830.0" styleClass="Downbar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="70.0" layoutY="7.0" styleClass="LabelsToolbar" text="Nueva Orden de Servicio" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/order-medium.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <GridPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="312.0" minWidth="0.0" prefWidth="275.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="339.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="488.0" minWidth="10.0" prefWidth="475.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefWidth="280.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="275.0" styleClass="LabelsSubtitle" text="Datos del Cliente" GridPane.columnSpan="2">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="N° Tel. Principal:" GridPane.rowIndex="2" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Nombre (s):" GridPane.rowIndex="4" />
+                        <Label fx:id="lblNames" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label prefHeight="23.0" prefWidth="131.0" styleClass="Labels" text="Apellido Paterno:" GridPane.rowIndex="5" />
+                        <Label fx:id="lblApp" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label prefHeight="23.0" prefWidth="135.0" styleClass="Labels" text="Apellido Materno:" GridPane.rowIndex="6" />
+                        <Label fx:id="lblApm" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label prefHeight="17.0" prefWidth="270.0" styleClass="LabelsSubtitle" text="Direccion" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefWidth="125.0" styleClass="Labels" text="Calle:" GridPane.rowIndex="9" />
+                        <Label fx:id="lblStreet" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" textAlignment="RIGHT" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Numero:" GridPane.rowIndex="10" />
+                        <Label fx:id="lblNum" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Colonia:" GridPane.rowIndex="11" />
+                        <Label fx:id="lblCol" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                        <TextField fx:id="txtPhoneOne" alignment="CENTER_RIGHT" promptText="4888825455" styleClass="TextFields" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="23.0" prefWidth="140.0" styleClass="Labels" text="N° Tel. Secundario:" GridPane.rowIndex="3" />
+                        <Label fx:id="lblPhoneTwo" alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="17.0" prefWidth="125.0" styleClass="Labels" text="Codigo Postal:" GridPane.rowIndex="12" />
+                        <Label alignment="CENTER_RIGHT" prefWidth="125.0" styleClass="Labels" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="137.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="173.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints fillHeight="false" minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="310.0" styleClass="LabelsSubtitle" text="Datos del Dispositivo" GridPane.columnSpan="2">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Tipo Dispositivo:" GridPane.rowIndex="2" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Modelo:" GridPane.rowIndex="5" />
+                        <Label prefHeight="19.0" prefWidth="310.0" styleClass="LabelsSubtitle" text="Descripcion del Servicio" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefWidth="125.0" styleClass="Labels" text="Tipo de Servicio:" wrapText="true" GridPane.rowIndex="10" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Costo Del Servicio:" GridPane.rowIndex="11" />
+                        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+                        <Label prefHeight="18.0" prefWidth="125.0" styleClass="Labels" text="Marca:" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="cbTypes" prefWidth="170.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="cbBrands" prefWidth="170.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <JFXButton fx:id="btnSearch" prefWidth="170.0" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <styleClass>
+                              <String fx:value="buttons" />
+                              <String fx:value="buttonSearch" />
+                           </styleClass>
+                        </JFXButton>
+                        <ComboBox fx:id="cbDevices" prefWidth="170.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="IMEI / No Serie:" GridPane.rowIndex="6" />
+                        <Label prefWidth="125.0" styleClass="Labels" text="Descripcion de Entrada:" wrapText="true" GridPane.rowIndex="7" />
+                        <TextField fx:id="txtSerial" alignment="CENTER" styleClass="TextFields" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextArea fx:id="txtObs" prefHeight="50.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <ComboBox fx:id="cbServices" prefWidth="170.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <TextField fx:id="txtCost" alignment="CENTER_RIGHT" styleClass="TextFields" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <JFXButton fx:id="btnAdd" prefWidth="171.0" text="Agregar" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <styleClass>
+                              <String fx:value="buttons" />
+                              <String fx:value="buttonAdd" />
+                           </styleClass>
+                        </JFXButton>
+                        <Label prefWidth="125.0" styleClass="Labels" text="Prioridad de Servicio:" wrapText="true" GridPane.rowIndex="12" />
+                        <ComboBox fx:id="cbPriority" prefWidth="170.0" stylesheets="@../css/ComboStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefWidth="470.0" GridPane.columnIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="294.0" minHeight="239.0" prefHeight="285.0" vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label styleClass="LabelsSubtitle" text="Detalles de la Orden" GridPane.columnSpan="2">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+                        <Label prefHeight="20.0" prefWidth="116.0" styleClass="Labels" text="N° de Orden:" GridPane.rowIndex="2" />
+                        <Label fx:id="lblLastOrder" styleClass="Labels" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lblDate" styleClass="Labels" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label styleClass="Labels" text="Fecha de Ord:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label styleClass="LabelsSubtitle" text="Dispositivos en la Orden:" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Roboto Medium" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="4" />
+                        <JFXListView fx:id="lvDets" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/ListStyle.css" GridPane.columnSpan="4" GridPane.rowIndex="6" />
+                        <JFXButton fx:id="btnRemove" prefWidth="171.0" text="Quitar" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <styleClass>
+                              <String fx:value="buttons" />
+                              <String fx:value="buttonDelete" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSaveOrder" prefWidth="170.0" text="Guardar Orden" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                           <styleClass>
+                              <String fx:value="buttons" />
+                              <String fx:value="buttonSave" />
+                           </styleClass>
+                        </JFXButton>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="115.0" styleClass="Labels" text="# Dispositivos:" GridPane.rowIndex="7" />
+                        <Label styleClass="Labels" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label styleClass="Labels" text="Total Orden" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Label styleClass="Labels" text="0.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

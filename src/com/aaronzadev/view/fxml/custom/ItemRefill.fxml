@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="gvRoot" prefHeight="100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" />
+      <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" />
+    <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lblOperator" alignment="CENTER" prefHeight="17.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="lblNum" prefHeight="17.0" text="Label" GridPane.rowIndex="1" />
+      <Label fx:id="lblRef" prefHeight="17.0" text="Label" textFill="#4a4a4a" />
+      <Label fx:id="lblComm" alignment="CENTER_RIGHT" prefHeight="17.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="lblCost" alignment="CENTER_RIGHT" text="Label" GridPane.columnIndex="2" />
+      <Label fx:id="lblObs" alignment="CENTER" prefHeight="30.0" text="Label" textFill="#4a4a4a" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <Label fx:id="lblUser" prefHeight="17.0" text="Label" textAlignment="CENTER" textFill="#4a4a4a" wrapText="true" GridPane.rowIndex="2" />
+      <Label fx:id="lblDate" alignment="CENTER" prefHeight="17.0" text="Label" GridPane.columnIndex="1" />
+   </children>
+</GridPane>

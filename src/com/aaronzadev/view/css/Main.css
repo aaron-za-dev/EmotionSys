@@ -1,0 +1,341 @@
+/**** TODO Probar el tema light ******/
+@font-face{
+    font-family: Aileron;
+    src: url('../fonts/AileronRegular.otf');
+}
+@font-face{
+    font-family: Aileron Semibold;
+    src: url('../fonts/AileronSB.otf');
+}
+@font-face{
+    font-family: Aileron Bold;
+    src: url('../fonts/AileronBold.otf');
+}
+
+
+.BackgroundLogin {
+    -fx-background-color: linear-gradient(to bottom, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+}
+
+.LoginFields {
+    -fx-text-fill: #232323;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+    -fx-highlight-text-fill: #F9F9F9;
+    -fx-highlight-fill: #1A73E8;
+    -fx-background-insets: 0px;
+    -fx-pref-height: 33px;
+    -fx-background-color: #F9F9F9;
+}
+
+.BackgroundRoot {
+    -fx-background-color: #1B1B1B;
+}
+
+.BackgroundToolbar {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+}
+
+.BackgroundCard {
+    -fx-background-color: #212121;
+    -fx-effect: dropshadow(three-pass-box,  rgba(0.0, 0.0, 0.0, 0.6), 10, 0, 2.0, 2.0);
+}
+
+.SidePanel {
+    -fx-background-color: #212121;
+    -fx-border-color: #212121;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.SidePanelMenus {
+    -fx-padding: 0;
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+}
+
+.Downbar {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+}
+
+.Spinner .arc {
+    -fx-stroke: #0059FB;
+}
+
+
+.Menus {
+    -fx-background-color: transparent;
+    -fx-pref-height: 42px;
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Bold";
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 0 20;
+    -fx-graphic-text-gap: 15;
+}
+
+.Menu-sales {
+    -fx-graphic: url("../icons/sale.png");
+}
+
+.Menu-refill {
+    -fx-graphic: url("../icons/refill.png");
+}
+
+.Menu-support {
+    -fx-graphic: url("../icons/support.png");
+}
+
+.Menu-manage {
+    -fx-graphic: url("../icons/settings.png");
+}
+
+.Menu-products {
+    -fx-graphic: url("../icons/prods.png");
+}
+
+/********************** **************************************/
+
+.Submenus {
+    -fx-background-color: transparent;
+    -fx-pref-height: 35px;
+    -fx-min-height: 35px;
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron SemiBold";
+    -fx-font-size: 15px;
+}
+
+.Submenus:hover {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #f9f9f9;
+    -fx-effect: dropshadow(three-pass-box,  rgba(0.0, 0.0, 0.0, 0.6), 10, 0, 2.0, 2.0);
+}
+
+.TextFields {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+    -fx-highlight-text-fill: #f9f9f9;
+    -fx-highlight-fill: #FFB033;
+    -fx-background-insets: 0px;
+    -fx-pref-height: 33px;
+    -fx-background-color: #525252;
+}
+
+.TextFieldSearch{
+    -fx-background-image: url("../icons/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+}
+
+.TextFieldSearch:focused{
+    -fx-background-image: url("../icons/search-a.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+}
+
+.LablelsSuperTitle{
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 30px;
+}
+
+.LablelsSuperSubTitle{
+    -fx-text-fill: #232323;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 20px;
+}
+
+.Labels {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+}
+
+.LabelsDownbar {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+}
+
+.LabelsToolbar {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 30px;
+}
+
+.LabelsSubtitle {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Bold";
+    -fx-font-size: 17px;
+}
+
+.LabelsTitle {
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Bold";;
+    -fx-font-size: 22px;
+}
+
+.buttons {
+    -fx-background-color: linear-gradient(to right, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-text-fill: #f9f9f9;
+    -fx-pref-height: 33px;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+}
+
+.buttons:hover {
+    -fx-background-color: linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+    -fx-text-fill: #232323;
+    -fx-effect: dropshadow(three-pass-box,  rgba(0.0, 0.0, 0.0, 0.6), 10, 0, 2.0, 2.0);
+}
+
+.text-area {
+    -fx-padding: 0;
+    -fx-cursor: default;
+    -fx-background-color: #525252;
+    -fx-text-fill: #f9f9f9;
+    -fx-font-family: "Aileron Semibold";
+    -fx-font-size: 14px;
+    -fx-highlight-text-fill: #f9f9f9;
+    -fx-highlight-fill: #FFB033;
+    -fx-background-insets: 0px;
+}
+.text-area > .scroll-pane {
+    -fx-background-color: transparent !important;
+    -fx-background-insets: -1px !important;
+    -fx-padding: 0px;
+    -fx-border-width: 0px !important;
+}
+
+.text-area > .scroll-pane > *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-pref-width: 4;
+}
+
+.text-area > .scroll-pane > *.scroll-bar > *.thumb {
+    -fx-background-color: linear-gradient(to bottom, #1c57fd, #1b51f8, #1b4bf3);
+    -fx-border-color: linear-gradient(to bottom, #1c57fd, #1b51f8, #1b4bf3);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.text-area > .scroll-pane > *.scroll-bar:vertical > *.track {
+    -fx-background-color: transparent;
+}
+
+.text-area > .scroll-pane > *.scroll-bar:vertical > *.track-background {
+    -fx-background-color: transparent;
+}
+
+.text-area > .scroll-pane > *.scroll-bar:vertical > *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.text-area > .scroll-pane > *.scroll-bar > *.decrement-button > *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.text-area > .scroll-pane > *.scroll-bar:vertical > *.increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.text-area > .scroll-pane > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
+    -fx-padding: 0.25em 0.583em 0.25em 0.583em;
+    -fx-cursor: text;
+    -fx-background-color: #525252;
+}
+
+.text-area:focused .content {
+    -fx-background-color: #525252;
+}
+
+
+
+/********************** *************************************/
+
+.scroll {
+    -fx-background-color: transparent !important;
+    -fx-background-insets: -1px !important;
+    -fx-padding: 0px;
+    -fx-border-width: 0px !important;
+}
+
+.scroll > *.viewport {
+    -fx-background-color: transparent !important;
+    -fx-background-insets: 0;
+}
+
+.scroll > *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-pref-width: 4;
+}
+
+.scroll > *.scroll-bar > *.thumb {
+    -fx-background-color: linear-gradient(to bottom, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-border-color: linear-gradient(to bottom, #1a73e8, #006bef, #0063f6, #0059fb, #004eff);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.scroll > *.scroll-bar:vertical > *.track {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.track-background {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.scroll > *.scroll-bar > *.decrement-button > *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.scroll > *.scroll-bar:vertical > *.increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 4px;
+    -fx-pref-height: 0;
+}
+
+.scroll > *.scroll-bar > *.increment-button > *.increment-arrow {
+    -fx-background-color: transparent;
+}
+/******************** **************************************************/
+
+.separator .line {
+    -fx-border-color:linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+    -fx-border-width: 1px;
+}
+
+/************************* ********************************/
+
+.jfx-progress-bar .bar{
+    -fx-background-color: linear-gradient(to right, #ffcd3c, #ffbe36, #ffb033, #ffa133, #ff9234);
+}
+
+.jfx-progress-bar .track{
+    -fx-background-color: transparent;
+}
